@@ -29,6 +29,7 @@ def login():
         else:
             return redirect(url_for('register'))
     return '''
+    <h1>Login</h1>
     <form method="post">
         <input type="text" name="email" placeholder="email" required /><br>
         <input type="password" name="password" placeholder="Password" required /><br>
@@ -80,6 +81,7 @@ def register():
         conn.close()
 
     return '''
+    <h1>Register</h1>
     <form method="post">
         <input type="text" name="name" placeholder="nome" required /><br>
         <input type="text" name="course" placeholder="curso" required /><br>

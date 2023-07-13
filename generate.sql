@@ -111,9 +111,9 @@ FROM denunciaAvaliacaoProf dp
 JOIN avaliacaoProf ap ON dp.codAvaliacaoProf = ap.id;
 
 
-INSERT INTO departamento (nome) VALUES ('Departamento de Inovação e Tecnologia');
-INSERT INTO departamento (nome) VALUES ('Departamento de Ciências da Natureza');
-INSERT INTO departamento (nome) VALUES ('Departamento de Artes e Cultura');
+INSERT INTO departamento (nome) VALUES ('Departamento de Apoio ao desenvolvimento tecnológico - Brasília');
+INSERT INTO departamento (nome) VALUES ('Centro de excelência em turismo - Brasília');
+INSERT INTO departamento (nome) VALUES ('Centro UNB Cerrado - Brasília');
 INSERT INTO departamento (nome) VALUES ('Departamento de Pesquisa Científica');
 INSERT INTO departamento (nome) VALUES ('Departamento de Negócios e Empreendedorismo');
 INSERT INTO departamento (nome) VALUES ('Departamento de Humanidades e Ciências Sociais');
@@ -137,9 +137,9 @@ INSERT INTO professor (nome, codDepartamento) VALUES ('Camila Santos', 2);
 INSERT INTO professor (nome, codDepartamento) VALUES ('Guilherme Silva', 3);
 INSERT INTO professor (nome, codDepartamento) VALUES ('Laura Almeida', 4);
 
-INSERT INTO disciplina (nome, codigo) VALUES ('Escultura em Papel', 'ART101');
-INSERT INTO disciplina (nome, codigo) VALUES ('Dança Contemporânea', 'DAN201');
-INSERT INTO disciplina (nome, codigo) VALUES ('Gastronomia Molecular', 'CUL301');
+INSERT INTO disciplina (nome, codigo) VALUES ('Prática de pesquisa 1', 'ART101');
+INSERT INTO disciplina (nome, codigo) VALUES ('Legislação turística', 'DAN201');
+INSERT INTO disciplina (nome, codigo) VALUES ('Enoturismo', 'CUL301');
 INSERT INTO disciplina (nome, codigo) VALUES ('Design de Jogos Digitais', 'GAM401');
 INSERT INTO disciplina (nome, codigo) VALUES ('Fotografia Experimental', 'ART102');
 INSERT INTO disciplina (nome, codigo) VALUES ('Criação de Roteiros', 'FIL202');
