@@ -1,0 +1,19 @@
+<h1>Todas as denuncias</h1>
+<a href="/home">
+    <button>Retornar para a home</button>
+</a>
+<ul>
+    {% for denuncia in denuncias %}
+        <li>
+            <h5>{{denuncia[2]}}</h5>
+            <h5>{{denuncia[5]}}</h5>
+            <h5>{{denuncia[6]}}</h5>
+        </li>
+        <form action="/aceitar_denuncia/{{denuncia[3]}}/{{denuncia[0]}}" method="post">
+            <button type="submit">Aceitar denuncia (deletar comentário)</button>
+        </form>
+        <form action="/deletar_denuncia/{{denuncia[1]}}//{{denuncia[0]}}" method="post">
+            <button type="submit">Não Aceitar denuncia (deletar denuncia)</button>
+        </form>
+    {% endfor %}
+</ul>

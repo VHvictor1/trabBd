@@ -1,0 +1,12 @@
+<h1>Estudantes</h1>
+<a href="/home">
+    <button>Retornar para a home</button>
+</a>
+<ul>
+    {% for resultado in resultados %}
+        <li>{{ resultado[1] }} -> {{resultado[2]}} -> {{resultado[3]}} -> {{resultado[4]}}</li>
+        <a href="/delete_estudante/{{resultado[0]}}">
+            <button>Deletar estudante</button>
+        </a>
+    {% endfor %}
+</ul>

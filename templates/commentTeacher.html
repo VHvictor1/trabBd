@@ -1,0 +1,20 @@
+<h1>Comentários do professor</h1>
+<div>
+    {% for resultado in resultados %}
+    <li>{{ resultado[1] }} - {{resultado[2]}}</li>
+    {%  if resultado[4] == user[0][0] %}
+        <form action="/delete_professor_comment/{{resultado[0]}}" method="POST">
+            <input type="hidden" name="teacher_id" value="{{ resultado[0] }}">
+            <button type="submit">Deletar comentario</button>
+        </form>
+       <a href="/edit_professor_comment/{{resultado[0]}}">
+           <button>Editar comentario</button>
+        </a>
+    {% else %}
+        <a href="/report_comment/professor/{{resultado[0]}}">
+            <button type="submit">Denunciar</button>
+        </a>
+    {% endif %}
+    {% endfor %}
+    <a href="/teacher">Voltar para professores</a>
+</div>

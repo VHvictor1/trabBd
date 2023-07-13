@@ -1,0 +1,12 @@
+<div>
+    <a href="/teacher">Ver os professores</a>
+    <a href="/classes">Ver as disciplinas</a>
+    <a href="/perfil">
+        Editar perfil
+    </a>
+    {% if user[0][6] == true %}
+        <a href="/administracao">
+            Ir para a administração
+        </a>
+    {% endif %}
+</div>

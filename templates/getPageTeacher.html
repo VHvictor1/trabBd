@@ -1,0 +1,16 @@
+<h1>Professor</h1>
+<a href="/home">
+    <button>Retornar para a home</button>
+</a>
+<ul>
+    {% for resultado in resultados %}
+        <li>{{ resultado[1] }}</li>
+        <a href="/comment_teacher/{{resultado[0]}}">
+            <button>Comentar</button>
+        </a>
+        <a href="/teacher_comments/{{resultado[0]}}">
+            <button>ver comentários</button>
+        </a>
+    {% endfor %}
+    <a href="">Criar novo professor?</a>
+</ul>
